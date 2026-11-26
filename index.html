@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minecraft Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Minecraft Trivia</h1>
+    <!-- Answer form. The shared name lets the player choose one answer at a time. -->
+    <form id="quiz-form">
+      <fieldset>
+        <legend>Which tool lets you collect wool from a sheep?</legend>
+        <label><input type="radio" name="answer" value="axe" required> Axe</label>
+        <label><input type="radio" name="answer" value="shovel"> Shovel</label>
+        <label><input type="radio" name="answer" value="hoe"> Hoe</label>
+        <label><input type="radio" name="answer" value="shears"> Shears</label>
+      </fieldset>
+      <button type="submit">Check answer</button>
+      <p id="feedback" role="status"></p>
+    </form>
+  </main>
+</body>
+</html>

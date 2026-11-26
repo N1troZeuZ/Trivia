@@ -1,0 +1,54 @@
+/* Page layout. The quiz shrinks to fit narrow screens. */
+body {
+  margin: 0;
+  padding: 1rem;
+  background: #edf2e7;
+  color: #203026;
+  font: 1rem/1.5 "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 36rem;
+  margin: 6vh auto;
+}
+
+/* Question and answer choices */
+form {
+  padding: clamp(1rem, 4vw, 2rem);
+  background: white;
+  border-top: 6px solid #497443;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  padding: .6rem;
+  border: 1px solid #aabca6;
+  cursor: pointer;
+}
+
+button {
+  margin-top: .5rem;
+  padding: .65rem 1rem;
+  background: #315732;
+  color: white;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+#feedback:empty {
+  margin: 0;
+}
